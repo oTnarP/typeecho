@@ -56,5 +56,5 @@ Feel free to fork this repository, make improvements, and submit pull requests.
 
 ## Contact
 
-For questions or suggestions, contact [Your Name] at [your-email@example.com].
+For questions or suggestions, contact [Sabbir Hossain Pranto] at cto@unicodeit.com.
 
