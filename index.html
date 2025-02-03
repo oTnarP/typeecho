@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeEcho - Online Typing Test</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+      <h1 class="display-4 mb-4">Type<span class="text-primary">Echo</span></h1>
+      <p class="lead text-muted">Listen, Type, and Improve!</p>
+      <!-- Timer -->
+      <div id="timer" class="display-6 mb-4">
+        Time Left: <span id="time-left">60</span> seconds
+      </div>
+      <!-- Main Content -->
+      <div id="typing-test" class="mt-4 p-4 rounded shadow-lg bg-white">
+        <!-- Time Selection Slider -->
+        <div class="time-selection-container mb-3">
+          <label for="time-slider" id="time-value">1 Minute</label>
+          <input
+            type="range"
+            id="time-slider"
+            class="form-range"
+            min="1"
+            max="5"
+            step="2"
+            value="1"
+          />
+        </div>
+        <!-- Start Test Button -->
+        <button id="play-word-btn" class="btn btn-primary mb-3 px-5 py-2">
+          Start Test
+        </button>
+        <!-- Play Again Button -->
+        <button
+          id="play-again-btn"
+          class="btn btn-secondary mb-3 px-5 py-2 d-none"
+        >
+          Play Again
+        </button>
+        <!-- Input Field -->
+        <input
+          type="text"
+          id="user-input"
+          class="form-control mb-3 py-2"
+          placeholder="Type the word here..."
+          autofocus
+          disabled
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+        />
+        <!-- Feedback -->
+        <p id="feedback" class="lead m-0"></p>
+      </div>
+      <!-- Score Display -->
+      <div id="score-display" class="mt-4 d-none">
+        <h2>Your Score: <span id="score">0</span> words</h2>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+      <p class="small text-muted">
+        &copy; <span id="current-year"></span> Mr. Pranto. All rights reserved.
+      </p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
